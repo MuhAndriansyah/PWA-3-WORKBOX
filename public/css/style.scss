@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+nav {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.nav-wrapper a {
+  font-size: 25px;
+}
+
+
+.mobile {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0px -3px 30px rgba(164, 164, 164, 0.25);
+  border-radius: 30px 30px 0px 0px;
+  z-index: 2;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+
+    li {
+      padding-top: 10px;
+
+      &:hover {
+        img {
+          transition: 0.4s ease;
+          filter: invert(57%) sepia(56%) saturate(3745%) hue-rotate(188deg) brightness(99%) contrast(90%);
+        }
+      }
+    }
+  }
+}
+
+.card {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.img-width {
+  width: 30px;
+
+  @include tablet {
+    width: 17px;
+  }
+}
+
+.standing {
+  margin-bottom: 100px;
+}
+
+.mb-club:last-child {
+  margin-bottom: 20px;
+}
+
+.topnav {
+  li {
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+.brand-logo {
+  img {
+    height: 64px;
+
+    @include tablet {
+      height: 55px;
+    }
+  }
+}

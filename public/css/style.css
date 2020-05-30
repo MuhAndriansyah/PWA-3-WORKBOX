@@ -1,0 +1,91 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+nav {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.nav-wrapper a {
+  font-size: 25px;
+}
+
+.mobile {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  -webkit-box-shadow: 0px -3px 30px rgba(164, 164, 164, 0.25);
+          box-shadow: 0px -3px 30px rgba(164, 164, 164, 0.25);
+  border-radius: 30px 30px 0px 0px;
+  z-index: 2;
+}
+
+.mobile__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mobile__list li {
+  padding-top: 10px;
+}
+
+.mobile__list li:hover img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-filter: invert(57%) sepia(56%) saturate(3745%) hue-rotate(188deg) brightness(99%) contrast(90%);
+          filter: invert(57%) sepia(56%) saturate(3745%) hue-rotate(188deg) brightness(99%) contrast(90%);
+}
+
+.card {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.img-width {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .img-width {
+    width: 17px;
+  }
+}
+
+.standing {
+  margin-bottom: 100px;
+}
+
+.mb-club:last-child {
+  margin-bottom: 20px;
+}
+
+.topnav li a {
+  font-size: 16px;
+}
+
+.brand-logo img {
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  .brand-logo img {
+    height: 55px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
